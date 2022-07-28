@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Custom Scrollbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+    body {
+      font-family: 'Inconsolata', monospace;
+    }
+
+    div.gray-box {
+      max-height: 600px; 
+      overflow-y: scroll; 
+      background-color: #eee; 
+
+      border: 1px solid #aaa; 
+      border-radius: 3px;
+    }
+
+    .custom-scrollbar {
+      scrollbar-width: thin;
+    }
+
+    @media (min-width: 1080px) {
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 0.5vw;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 1vw;
+      }
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: RGBA(188, 188, 188, 0.5);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: RGBA(188, 188, 188, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Cookbook - Custom Scrollbar</h1>
+  <hr>
+  <div class="custom-scrollbar gray-box" style="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada iaculis libero, eu tristique purus consectetur et. Maecenas semper vitae ligula vitae bibendum. Sed eu viverra neque. Phasellus cursus odio ac eros vestibulum, eget pretium eros pharetra. Quisque semper dui a pretium sagittis. Donec iaculis, elit congue molestie posuere, nulla elit convallis tortor, quis venenatis ante diam quis metus. Vestibulum lectus tellus, commodo aliquam faucibus quis, pellentesque egestas nisi. Morbi vel ligula ut ex viverra congue sit amet vel ex. Sed sed fringilla lectus, et sagittis tellus. Mauris fermentum iaculis risus eu commodo. Mauris luctus libero non dolor volutpat blandit at quis sapien. Etiam porttitor risus nibh, nec suscipit purus malesuada in. Sed aliquet efficitur elit, nec iaculis sapien bibendum ut.</p>
+    <p>Duis velit nibh, vehicula quis nunc eu, molestie dignissim elit. In vel interdum orci, vel dictum libero. Nunc nisl neque, interdum id ipsum eget, condimentum imperdiet sem. Cras suscipit urna ipsum, ut rutrum urna facilisis vel. Ut condimentum auctor hendrerit. Duis nec est elementum, aliquam nisl rhoncus, ultricies lacus. Mauris a libero lacus. Vestibulum pellentesque est eu tempor bibendum. Maecenas nec sodales sem. Curabitur eget dictum metus, bibendum elementum dolor. Praesent non tincidunt diam, vel blandit mi. Phasellus eget diam pellentesque, fringilla sem fermentum, maximus lorem. Proin eu gravida tortor. Sed viverra mauris vel erat pharetra sagittis.</p>
+    <p>Donec a mi vitae justo vehicula scelerisque id id felis. Etiam mollis metus nec augue varius, id condimentum erat tincidunt. Aenean rhoncus velit felis, fringilla volutpat lectus fermentum nec. Ut mollis augue orci, eget molestie leo porta mattis. Etiam vitae orci placerat magna lobortis luctus at et lectus. Praesent enim dolor, fringilla quis sollicitudin vitae, volutpat eget nibh. Proin sodales, urna vulputate sollicitudin molestie, enim ligula egestas arcu, ac fringilla sem eros eu felis. Etiam eu molestie sem, vitae sodales leo. Aenean est metus, tempor et sodales sit amet, interdum sed elit.</p>
+    <p>Suspendisse sit amet ipsum pulvinar, lobortis nibh molestie, aliquet magna. Integer eget faucibus neque, ut fermentum augue. Donec non aliquam lacus. In hac habitasse platea dictumst. Aliquam suscipit aliquam dictum. Aliquam erat volutpat. Nullam pulvinar posuere congue.</p>
+    <p>Nulla non ultricies lorem, vel vestibulum leo. Sed accumsan aliquet magna, quis euismod dui efficitur non. Quisque scelerisque euismod mauris, at scelerisque lorem venenatis ac. Nunc vitae auctor magna. Morbi ut nulla id arcu vulputate ullamcorper. Nunc ac dolor nulla. Vestibulum vel nisi a libero dictum tempus. Phasellus tincidunt urna risus, vitae semper sem mattis et. Quisque massa eros, auctor id convallis eu, sodales nec quam. Sed rhoncus placerat neque, et pretium magna mattis placerat. In auctor gravida diam ut tempor.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada iaculis libero, eu tristique purus consectetur et. Maecenas semper vitae ligula vitae bibendum. Sed eu viverra neque. Phasellus cursus odio ac eros vestibulum, eget pretium eros pharetra. Quisque semper dui a pretium sagittis. Donec iaculis, elit congue molestie posuere, nulla elit convallis tortor, quis venenatis ante diam quis metus. Vestibulum lectus tellus, commodo aliquam faucibus quis, pellentesque egestas nisi. Morbi vel ligula ut ex viverra congue sit amet vel ex. Sed sed fringilla lectus, et sagittis tellus. Mauris fermentum iaculis risus eu commodo. Mauris luctus libero non dolor volutpat blandit at quis sapien. Etiam porttitor risus nibh, nec suscipit purus malesuada in. Sed aliquet efficitur elit, nec iaculis sapien bibendum ut.</p>
+    <p>Duis velit nibh, vehicula quis nunc eu, molestie dignissim elit. In vel interdum orci, vel dictum libero. Nunc nisl neque, interdum id ipsum eget, condimentum imperdiet sem. Cras suscipit urna ipsum, ut rutrum urna facilisis vel. Ut condimentum auctor hendrerit. Duis nec est elementum, aliquam nisl rhoncus, ultricies lacus. Mauris a libero lacus. Vestibulum pellentesque est eu tempor bibendum. Maecenas nec sodales sem. Curabitur eget dictum metus, bibendum elementum dolor. Praesent non tincidunt diam, vel blandit mi. Phasellus eget diam pellentesque, fringilla sem fermentum, maximus lorem. Proin eu gravida tortor. Sed viverra mauris vel erat pharetra sagittis.</p>
+    <p>Donec a mi vitae justo vehicula scelerisque id id felis. Etiam mollis metus nec augue varius, id condimentum erat tincidunt. Aenean rhoncus velit felis, fringilla volutpat lectus fermentum nec. Ut mollis augue orci, eget molestie leo porta mattis. Etiam vitae orci placerat magna lobortis luctus at et lectus. Praesent enim dolor, fringilla quis sollicitudin vitae, volutpat eget nibh. Proin sodales, urna vulputate sollicitudin molestie, enim ligula egestas arcu, ac fringilla sem eros eu felis. Etiam eu molestie sem, vitae sodales leo. Aenean est metus, tempor et sodales sit amet, interdum sed elit.</p>
+    <p>Suspendisse sit amet ipsum pulvinar, lobortis nibh molestie, aliquet magna. Integer eget faucibus neque, ut fermentum augue. Donec non aliquam lacus. In hac habitasse platea dictumst. Aliquam suscipit aliquam dictum. Aliquam erat volutpat. Nullam pulvinar posuere congue.</p>
+    <p>Nulla non ultricies lorem, vel vestibulum leo. Sed accumsan aliquet magna, quis euismod dui efficitur non. Quisque scelerisque euismod mauris, at scelerisque lorem venenatis ac. Nunc vitae auctor magna. Morbi ut nulla id arcu vulputate ullamcorper. Nunc ac dolor nulla. Vestibulum vel nisi a libero dictum tempus. Phasellus tincidunt urna risus, vitae semper sem mattis et. Quisque massa eros, auctor id convallis eu, sodales nec quam. Sed rhoncus placerat neque, et pretium magna mattis placerat. In auctor gravida diam ut tempor.</p>
+  </div>
+  </div>
+</body>
+</html>
