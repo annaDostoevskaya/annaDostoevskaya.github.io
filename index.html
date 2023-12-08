@@ -1,23 +1,22 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Un-minified version -->
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-    <title>Anna Dostoevskaya * MAIN</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Anna Dostoevskaya</title>
 </head>
 <body>
-  <header>
-    <h1>Hello, world</h1>
-    <p>Welcome to my website!</p>
-  </header>
-  <main>
-    <p>This is my new website and it's using Simple.css. It's really cool. If you want to use it too, you can <a href="https://simplecss.org">visit their site</a>.</p>
-  </main>
-  <footer>
-    <p>Jane Smith's website.</p>
-  </footer>
+    <article>
+        <header>
+            <h4><a href="#comment-1" rel="bookmark">Comment #1</a> by <a href="https://discord.com/id744279801690456198">bolt</a></h4>
+            <time datetime="2023-12-09T00:58Z">December 9th, 2023 at 00:58</time>
+        </header>
+        <p>
+            I'm having a read through gingerBill's memory allocation articles (thanks, btw).
+            Wondering why <tt>DEFAULT_ALIGNMENT</tt> was defined as <tt>2*sizeof(void *)</tt>.
+            Would that not be double the architecture word size, where the word size alone would be the largest alignment required?
+            (Rather than ping him, figured I could just leave this as an open question, in case I'm missing something obvious.)
+        </p>
+    </article>
 </body>
 </html>
-
